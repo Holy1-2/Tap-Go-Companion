@@ -33,13 +33,7 @@ Solves the daily frustration of waiting in long queues at banks, hospitals, and 
 4. **Admin**: Staff control panel
 5. **Profile**: User account & history
 
-## 🎤 Presentation Tips
-1. Start with relatable queue frustration stories
-2. Demo the complete user flow live
-3. Show admin panel for business perspective
-4. Highlight time saved statistics
-5. Mention QR code integration for physical locations
-6. Discuss scalability to other industries
+
 
 ## 🚀 Quick Start
 ```bash
