@@ -12,7 +12,7 @@ Solves the daily frustration of waiting in long queues at banks, hospitals, and 
 - ✅ Admin Management Panel
 - ✅ Multi-location Support
 
-## 🏆 Why It Can Win
+## 🏆 Why Queueless
 1. **Real Problem**: Everyone experiences queue frustration
 2. **Easy Demo**: Live demonstration with visible results
 3. **Scalable**: Works for any service industry
