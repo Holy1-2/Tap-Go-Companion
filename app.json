@@ -38,6 +38,17 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "react-native-vector-icons",
+        {
+          "android": {
+            "fonts": ["./assets/fonts/MaterialCommunityIcons.ttf"]
+          },
+          "ios": {
+            "fonts": ["./assets/fonts/MaterialCommunityIcons.ttf"]
+          }
+        }
       ]
     ],
     "experiments": {

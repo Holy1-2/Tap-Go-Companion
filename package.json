@@ -8,7 +8,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+     "download-fonts": "node scripts/download-fonts.js",
+    "setup": "npm run download-fonts && expo prebuild --clean"
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.4.2",
