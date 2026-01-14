@@ -1,43 +1,63 @@
-# QueueLess - Smart Waiting System
+# 🚍 Tap & Go Companion App
+
+A smart mobile companion app designed to enhance the **Tap & Go / AC Mobility** public transport experience by providing real-time trip insights, card usage visibility, and passenger-friendly tools.
+
+---
 
 ## 🚀 Problem Solved
-Solves the daily frustration of waiting in long queues at banks, hospitals, and government offices.
+Public transport passengers often experience uncertainty:
+- Not knowing when a bus will arrive
+- No visibility of trip progress
+- Limited insight into Tap & Go usage
+- Poor communication during delays
+
+The **Tap & Go Companion App** solves this by giving passengers **clarity, control, and confidence** throughout their journey.
+
+---
 
 ## 🎯 Key Features
-- ✅ Digital Queue Numbers
-- ✅ Real-time Queue Updates
-- ✅ Wait Time Predictions
-- ✅ Smart Notifications
-- ✅ Remote Waiting
-- ✅ Admin Management Panel
-- ✅ Multi-location Support
+- ✅ Smart Trip Companion (live journey tracking)
+- ✅ Tap & Go Card Insights (usage & history)
+- ✅ Route & Stop Awareness
+- ✅ Live Journey Status (boarding → arrival)
+- ✅ Passenger Notifications & Alerts
+- ✅ Trip History & Summaries
+- ✅ Feedback & Ratings System
 
-## 🏆 Why Queueless
-1. **Real Problem**: Everyone experiences queue frustration
-2. **Easy Demo**: Live demonstration with visible results
-3. **Scalable**: Works for any service industry
-4. **Business Value**: Reduces physical infrastructure costs
-5. **User Experience**: Modern, intuitive interface
+---
+
+## 🏆 Why This App
+1. **Real Transport Problem** – Used daily by commuters
+2. **High Practical Value** – Extends Tap & Go beyond payments
+3. **Easy to Demonstrate** – Clear real-time UI flow
+4. **Scalable Design** – Supports multiple routes & operators
+5. **Professional UX** – Modern mobility-focused interface
+
+---
 
 ## 🧠 Technology Stack
-- **Frontend**: React Native (Expo)
-- **Backend**: Firebase (Firestore, Auth, Cloud Messaging)
-- **Styling**: Custom Modern Black Theme with Blue Accents
-- **Navigation**: React Navigation 6
+- **Mobile**: React Native (Expo)
+- **Navigation**: Expo Router / React Navigation
+- **State Management**: React Hooks
+- **Backend (Planned)**: Firebase / Transport APIs
+- **Styling**: Modern clean UI (Dark & Light modes)
+- **Icons**: Material Community Icons
 - **Notifications**: Expo Notifications
 
-## 📱 Screens
-1. **Home**: Service selection with stats
-2. **Queue**: Real-time queue management
-3. **Notifications**: Alert management
-4. **Admin**: Staff control panel
-5. **Profile**: User account & history
+---
 
+## 📱 App Screens
+1. **Home** – Quick access to trip & card info
+2. **Live Trip** – Real-time journey progress
+3. **Card Dashboard** – Tap & Go usage & history
+4. **Notifications** – Transport alerts & updates
+5. **Profile** – User preferences & feedback
 
+---
 
 ## 🚀 Quick Start
 ```bash
-npx create-expo-app QueueLess --template
-cd QueueLess
+npx create-expo-app tap-go-companion
+cd tap-go-companion
 npm install
 expo start
