@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Colors } from '../theme/colors';
-import { HomeIcon, QueueIcon, HistoryIcon, ProfileIcon } from '../components/Icons';
+import { HomeIcon, QueueIcon, HistoryIcon, ProfileIcon } from '../screens/Icons';
 import HomeScreen from '../screens/HomeScreen';
 import QueueScreen from '../screens/QueueScreen';
 import HistoryScreen from '../screens/HistoryScreen';

@@ -12,7 +12,7 @@ interface TabBarProps {
 const BottomTabBar: React.FC<TabBarProps> = ({ state, descriptors, navigation }) => {
   const tabs = [
     {
-      name: 'Home',
+      name: 'SignUp',
       icon: (focused: boolean) => (
         <Svg width="24" height="24" viewBox="0 0 24 24">
           <Path

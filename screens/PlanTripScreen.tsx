@@ -4,15 +4,15 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Animat
 import { HomeIcon, WorkIcon, BellIcon, UserIcon, BusIcon, WalletIcon } from './icons';
 
 interface Props {
-   onNavigate: () => void;
+  onNavigate: () => void;
   onGoNotifications: () => void;
   onGoAccount: () => void;
   onGoCard: () => void;
   onGoSchedule: () => void;
 }
 
-export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
-     const [destination, setDestination] = useState('');
+const PlanTripScreen: React.FC<Props> = ({ onNavigate, onGoNotifications, onGoAccount, onGoCard, onGoSchedule }) => {
+  const [destination, setDestination] = useState('');
   const fadeAnim = useState(new Animated.Value(0))[0];
 
   useEffect(() => {
@@ -22,6 +22,7 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
       useNativeDriver: true,
     }).start();
   }, []);
+
   return (
     <View style={styles.container}>
       {/* Decorative Top Pattern */}
@@ -43,11 +44,11 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
             <Text style={styles.userName}>Emery K. 🇷🇼</Text>
           </View>
           <View style={styles.headerActions}>
-            <TouchableOpacity style={styles.circleBtn} onPress={onNavigate}>
+            <TouchableOpacity style={styles.circleBtn} onPress={onGoNotifications}>
               <BellIcon size={20} color="#222" />
               <View style={styles.badge} />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.profileBtn} onPress={onNavigate}>
+            <TouchableOpacity style={styles.profileBtn} onPress={onGoAccount}>
               <UserIcon size={20} color="#FFF" />
             </TouchableOpacity>
           </View>
@@ -76,7 +77,7 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
         </View>
 
         {/* Wallet Overview */}
-        <TouchableOpacity style={styles.walletCard} onPress={onNavigate} activeOpacity={0.9}>
+        <TouchableOpacity style={styles.walletCard} onPress={onGoCard} activeOpacity={0.9}>
           <View style={styles.walletInfo}>
             <View>
               <Text style={styles.walletLabel}>Tap&Go Balance</Text>
@@ -86,34 +87,16 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
               <WalletIcon size={24} color="#2563EB" />
             </View>
           </View>
-          <View style={styles.walletFooter}>
-            <Text style={styles.walletAction}>Manage account</Text>
+          <View style={styles.walletLinks}>
+            <TouchableOpacity onPress={onGoAccount}>
+              <Text style={styles.linkText}>Manage account</Text>
+            </TouchableOpacity>
             <View style={styles.dotSeparator} />
-            <Text style={styles.walletAction}>Top up</Text>
+            <TouchableOpacity onPress={onGoCard}>
+              <Text style={styles.linkText}>Top up</Text>
+            </TouchableOpacity>
           </View>
         </TouchableOpacity>
-
-        {/* Actions Grid */}
-        <View style={styles.actionGrid}>
-          <TouchableOpacity style={styles.gridItem} onPress={onNavigate}>
-            <View style={styles.gridIconBox}>
-              <BusIcon size={24} color="#222" />
-            </View>
-            <Text style={styles.gridLabel}>Schedules</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.gridItem} onPress={onNavigate}>
-            <View style={styles.gridIconBox}>
-              <BusIcon size={24} color="#222" />
-            </View>
-            <Text style={styles.gridLabel}>Live Map</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.gridItem} onPress={onNavigate}>
-            <View style={styles.gridIconBox}>
-              <WalletIcon size={24} color="#222" />
-            </View>
-            <Text style={styles.gridLabel}>Passes</Text>
-          </TouchableOpacity>
-        </View>
 
         {/* Recent Places */}
         <Text style={styles.historyLabel}>Recent searches</Text>
@@ -141,7 +124,12 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FFFFFF' },
   topPattern: { position: 'absolute', top: 0, left: 0, right: 0, zIndex: 0 },
-  scrollContent: { padding: 24, paddingTop: 60, zIndex: 1 },
+  scrollContent: { 
+    padding: 24, 
+    paddingTop: 60, 
+    paddingBottom: 140, 
+    zIndex: 1 
+  },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 },
   greeting: { fontSize: 14, color: '#717171', fontWeight: '500' },
   userName: { fontSize: 24, fontWeight: '700', color: '#222', marginTop: 2 },
@@ -186,13 +174,9 @@ const styles = StyleSheet.create({
   walletAmount: { fontSize: 32, fontWeight: '700', color: '#222', marginTop: 4 },
   currency: { fontSize: 16, color: '#2563EB', fontWeight: '800' },
   walletIconBox: { width: 50, height: 50, borderRadius: 16, backgroundColor: '#F0F7FF', alignItems: 'center', justifyContent: 'center' },
-  walletFooter: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingTop: 16, borderTopWidth: 1, borderTopColor: '#F7F7F7' },
-  walletAction: { fontSize: 13, fontWeight: '700', color: '#222', textDecorationLine: 'underline' },
+  walletLinks: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingTop: 16, borderTopWidth: 1, borderTopColor: '#F7F7F7' },
+  linkText: { fontSize: 13, fontWeight: '700', color: '#222', textDecorationLine: 'underline' },
   dotSeparator: { width: 4, height: 4, borderRadius: 2, backgroundColor: '#DEDEDE' },
-  actionGrid: { flexDirection: 'row', gap: 16, marginBottom: 40 },
-  gridItem: { flex: 1, alignItems: 'center' },
-  gridIconBox: { width: '100%', height: 64, borderRadius: 16, backgroundColor: '#F7F7F7', alignItems: 'center', justifyContent: 'center', marginBottom: 8 },
-  gridLabel: { fontSize: 12, fontWeight: '600', color: '#222' },
   historyLabel: { fontSize: 18, fontWeight: '700', color: '#222', marginBottom: 16 },
   historyList: { gap: 16 },
   historyItem: { flexDirection: 'row', alignItems: 'center' },
@@ -202,5 +186,4 @@ const styles = StyleSheet.create({
   historySub: { fontSize: 13, color: '#717171', marginTop: 2 }
 });
 
-
-
+export default PlanTripScreen;

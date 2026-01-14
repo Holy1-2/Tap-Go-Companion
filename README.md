@@ -1,6 +1,6 @@
-# 🚍 Tap & Go Companion App
+# 🚍Access Companion App
 
-A smart mobile companion app designed to enhance the **Tap & Go / AC Mobility** public transport experience by providing real-time trip insights, card usage visibility, and passenger-friendly tools.
+A smart mobile companion app designed to enhance the **Acces ** public transport experience by providing real-time trip insights, card usage visibility, and passenger-friendly tools.
 
 ---
 
@@ -11,13 +11,13 @@ Public transport passengers often experience uncertainty:
 - Limited insight into Tap & Go usage
 - Poor communication during delays
 
-The **Tap & Go Companion App** solves this by giving passengers **clarity, control, and confidence** throughout their journey.
+The **Access App** solves this by giving passengers **clarity, control, and confidence** throughout their journey.
 
 ---
 
 ## 🎯 Key Features
 - ✅ Smart Trip Companion (live journey tracking)
-- ✅ Tap & Go Card Insights (usage & history)
+- ✅ Access Card Insights (usage & history)
 - ✅ Route & Stop Awareness
 - ✅ Live Journey Status (boarding → arrival)
 - ✅ Passenger Notifications & Alerts
@@ -49,7 +49,7 @@ The **Tap & Go Companion App** solves this by giving passengers **clarity, contr
 ## 📱 App Screens
 1. **Home** – Quick access to trip & card info
 2. **Live Trip** – Real-time journey progress
-3. **Card Dashboard** – Tap & Go usage & history
+3. **Card Dashboard** – Your card usage & history
 4. **Notifications** – Transport alerts & updates
 5. **Profile** – User preferences & feedback
 
@@ -57,7 +57,7 @@ The **Tap & Go Companion App** solves this by giving passengers **clarity, contr
 
 ## 🚀 Quick Start
 ```bash
-npx create-expo-app tap-go-companion
-cd tap-go-companion
+npx create-expo-app access-companion
+cd access-companion
 npm install
 expo start
