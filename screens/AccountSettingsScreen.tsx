@@ -74,7 +74,7 @@ const AccountSettingsScreen: React.FC<Props> = ({
         <Text style={styles.sectionHeading}>Support</Text>
 
         <TouchableOpacity style={styles.settingItem}>
-          <Text style={styles.itemText}>How Tap&Go works</Text>
+          <Text style={styles.itemText}>How Access works</Text>
           <ChevronRight size={18} color="#717171" />
         </TouchableOpacity>
 

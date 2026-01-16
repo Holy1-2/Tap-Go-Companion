@@ -28,10 +28,9 @@ The **Access App** solves this by giving passengers **clarity, control, and conf
 
 ## 🏆 Why This App
 1. **Real Transport Problem** – Used daily by commuters
-2. **High Practical Value** – Extends Tap & Go beyond payments
-3. **Easy to Demonstrate** – Clear real-time UI flow
-4. **Scalable Design** – Supports multiple routes & operators
-5. **Professional UX** – Modern mobility-focused interface
+2. **Easy to Demonstrate** – Clear real-time UI flow
+3. **Scalable Design** – Supports multiple routes & operators
+4. **Professional UX** – Modern mobility-focused interface
 
 ---
 

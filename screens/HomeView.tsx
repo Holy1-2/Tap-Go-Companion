@@ -79,7 +79,7 @@ export const SignUpScreen: React.FC<Props> = ({ onNavigate }) => {
         <TouchableOpacity style={styles.walletCard} onPress={onNavigate} activeOpacity={0.9}>
           <View style={styles.walletInfo}>
             <View>
-              <Text style={styles.walletLabel}>Tap&Go Balance</Text>
+              <Text style={styles.walletLabel}>Access Balance</Text>
               <Text style={styles.walletAmount}>12,450 <Text style={styles.currency}>RWF</Text></Text>
             </View>
             <View style={styles.walletIconBox}>

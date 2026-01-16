@@ -30,7 +30,7 @@ const NotificationsScreen: React.FC<Props> = ({ onBack }) => {
         <View style={styles.notif}>
           <View style={styles.content}>
              <Text style={styles.nTitle}>Balance Low</Text>
-             <Text style={styles.nDesc}>Your Tap&Go balance is below 1,000 RWF. Top up now to avoid interruptions.</Text>
+             <Text style={styles.nDesc}>Your Access balance is below 1,000 RWF. Top up now to avoid interruptions.</Text>
              <Text style={styles.nTime}>1 hour ago</Text>
           </View>
         </View>

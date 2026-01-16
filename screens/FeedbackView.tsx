@@ -23,7 +23,7 @@ export const FeedbackView: React.FC = () => {
     );
   };
 
-  const commonIssues = ['Delay', 'Overcrowding', 'Tap&Go Card', 'Driver Conduct', 'Cleanliness'];
+  const commonIssues = ['Delay', 'Overcrowding', 'Access Card', 'Driver Conduct', 'Cleanliness'];
 
   return (
     <SafeAreaView style={styles.container}>

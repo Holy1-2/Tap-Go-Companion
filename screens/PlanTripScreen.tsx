@@ -80,7 +80,7 @@ const PlanTripScreen: React.FC<Props> = ({ onNavigate, onGoNotifications, onGoAc
         <TouchableOpacity style={styles.walletCard} onPress={onGoCard} activeOpacity={0.9}>
           <View style={styles.walletInfo}>
             <View>
-              <Text style={styles.walletLabel}>Tap&Go Balance</Text>
+              <Text style={styles.walletLabel}>Access Balance</Text>
               <Text style={styles.walletAmount}>12,450 <Text style={styles.currency}>RWF</Text></Text>
             </View>
             <View style={styles.walletIconBox}>

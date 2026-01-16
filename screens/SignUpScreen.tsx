@@ -32,7 +32,7 @@ const SignUpScreen: React.FC<Props> = ({ onNavigate, onGoLogin }) => {
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.flex}>
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           <View style={styles.titleSection}>
-            <Text style={styles.title}>Join Tap&Go Pro</Text>
+            <Text style={styles.title}>Join Access Pro</Text>
             <Text style={styles.subtitle}>Start your smarter commute journey across Rwanda today.</Text>
           </View>
 

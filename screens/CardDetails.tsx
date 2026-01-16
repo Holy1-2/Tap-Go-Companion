@@ -36,7 +36,7 @@ const CardDetailsScreen: React.FC<Props> = ({ onBack }) => {
              <View style={styles.cardGlow} />
              <View style={styles.cardHeader}>
                 <View>
-                   <Text style={styles.cardBrand}>Tap&Go</Text>
+                   <Text style={styles.cardBrand}>Access</Text>
                    <Text style={styles.cardTier}>PLATINUM PASS</Text>
                 </View>
                 <View style={styles.nfcBox}>
